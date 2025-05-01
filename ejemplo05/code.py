@@ -12,7 +12,7 @@ for fila in reader:
 
 csv_file.close()
 
-# Vuelca al JSON con la estructura que quieres
+# Transforma el JSON con la estructura propuesta 
 json_file = open("atp_tennis.json", "w", encoding="utf-8")
 json.dump({"docs": docs}, json_file, ensure_ascii=False, indent=4)
 json_file.close()
