@@ -5,7 +5,7 @@ import json
 csv_file = open("atp_tennis.csv", encoding="latin-1", newline="")
 reader = csv.DictReader(csv_file)
 
-# Construye la lista de documentos sin usar programación funcional
+# Construye la lista de documentos que debe imprimir
 docs = []
 for fila in reader:
     docs.append(fila)
