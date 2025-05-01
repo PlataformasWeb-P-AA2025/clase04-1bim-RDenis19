@@ -10,8 +10,8 @@ base_datos = "personas0005"
 url = f"http://127.0.0.1:5984/{base_datos}"
 headers = {'Content-Type': 'application/json'}
 
-# Enviar todos los documentos
+# Enviar todos los documentos (Json)
 for doc in data['docs']:
     response = requests.post(url, headers=headers, json=doc)
-    # Imprime Player_1 en lugar de 'nombre'
+    # Imprime Player_1
     print(f"Insertando {doc['Player_1']} | {response.status_code}")
